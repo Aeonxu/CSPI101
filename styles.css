@@ -1,0 +1,200 @@
+body {
+  font-family: "SF Pro Display", sans-serif;
+  margin: 0;
+  background-color: #beaad6;
+  height: 100%; /* Full height */
+}
+
+/* Store Page content padding*/
+.content {
+  padding: 20px; /* Add padding around content */
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Font color, margin, sie, font weight, color, text shadow */
+  margin: 40px 0;
+  font-size: 5em;
+  margin: 0;
+  font-weight: bold;
+  color: white; /* Color for the heading */
+  text-shadow: 0 0 10px #e2cfea, 0 0 20px #e2cfea;
+}
+
+#products-container {
+  display: grid; /* Change to grid layout, grid template columns repeat, gap, justify items, padding - border & radius */
+  grid-template-columns: repeat(4, 1fr); /* dispay grid*/
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+} /* end */
+
+.product {
+  border: none;
+  border-radius: 8px;
+  padding: 10px; /* padding width max width display flex direction, align items, text align, background color, box-shadow, transition */
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center */
+  text-align: left;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+} /* end */
+
+.product:hover {
+  box-shadow: 0 0 15px rgba(83, 43, 136, 0.5);
+}
+/* end */
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+} /* end product h3 font-size, color, margin*/
+
+.product h3 {
+  font-size: 16px;
+  color: #532b88;
+  margin: 0; /* Remove ,margin, color, font weight */
+}
+
+.product p {
+  margin: 5px 0;
+  color: #555; /* Lighter color for description, color, font weight, size */
+  font-weight: 300;
+}
+
+.product .price {
+  color: green; /* Price color */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Navbar styles ! pos top left width*/
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Navbar span the full width, height bg color, display, justify-content, align-items,padding, box-shadow */
+  height: 40px;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* end d j-c p-r*/
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+} /* end p, t-dcr, c, trncshn, f-weig*/
+
+#navbar a {
+  padding: 0 15px;
+  text-decoration: none;
+  color: rgb(161, 109, 213); /* Optional: Set text color */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-weight: bold;
+}
+
+/* Glowing effect on hover ! */
+#navbar a:hover {
+  color: #800080;
+  text-shadow: 0 0 10px #e2cfea, 0 0 20px #e2cfea;
+}
+/* About Me Page Styles ! */
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the container */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(184, 62, 214, 0.882);
+  overflow: hidden;
+  padding: 20px; /* padding */
+}
+
+.container.about-me {
+  flex: 1;
+} /* end */
+
+.container.skills {
+  flex: 1;
+}
+/* end */
+.photo {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* center */
+  align-items: center;
+}
+
+.photo img {
+  max-width: 100%; /* Photo max width */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  flex: 2; /* text up*/
+  padding: 20px;
+}
+
+.text h1 {
+  font-size: 2em; /* text h1 up*/
+  color: #532b88;
+}
+
+.text p {
+  line-height: 1.6; /* text p up*/
+}
+
+.purple {
+  color: #9b72cf; /* Color for the word "purple" */
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 100px 20px; /* start up*/
+  text-align: center;
+  color: white;
+}
+/* end */
+.hero h1 {
+  font-size: 5em;
+  margin: 0;
+  font-weight: bold;
+  color: white; /* Color for the heading */
+  text-shadow: 0 0 10px #e2cfea, 0 0 20px #e2cfea;
+}
+
+.hero p {
+  font-size: 1.4em; /* Smaller font size for the description */
+  margin: 20px 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px #e2cfea, 0 0 20px #e2cfea;
+} /* end */
+
+.homepage {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  background-color: #000002;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+/* end */
